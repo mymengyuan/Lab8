@@ -29,6 +29,8 @@ public class Bank {
         /*
          * Implement this function
          */
+        double newBalance = bankAccount.getAccountBalance() - amount;
+        return (newBalance >= 0);
     }
 
     /**
@@ -45,6 +47,10 @@ public class Bank {
         /*
          * Implement this function
          */
+        if (bankAccount == null) {
+            return false;
+        }
+        return true;
     }
 
     /**
